@@ -1,29 +1,27 @@
-import logo from "../assets/logo";
+
 
 const blogData = {
-  name: "Underreacted",
-  image: logo,
-  about: "A blog about learning React",
+  name: "My Blog",
+  image: "src/components/Screenshot_20260306_122431_One UI Home.jpg",
+  about: "This is my blog where I write about web development.",
   posts: [
     {
       id: 1,
-      title: "Components 101",
-      date: "December 15, 2020",
-      preview: "Setting up the building blocks of your site",
-      minutes: 5,
+      title: "Getting Started with React",
+      date: "may 1 2026",
+      preview: "React is a JavaScript library for building user interfaces.",
     },
     {
       id: 2,
-      title: "React Data Flow",
-      date: "December 11, 2020",
-      preview: "Passing props is never passé",
-      minutes: 15,
+      title: "Understanding Props and State",
+      date: "May 2 2026",
+      preview: "props allow you to pass data to your components, while state allows you to manage data within a component."
     },
     {
       id: 3,
-      title: "Function vs Class Components",
-      preview: "React, meet OOJS.",
-      minutes: 47,
+      title: "why component structure is important",
+      date: "May 3 2026",
+      preview: "Braking your UI into components allows you to reuse code and makes your application easier to maintain.",
     },
   ],
 };
