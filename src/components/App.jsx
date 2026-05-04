@@ -1,20 +1,23 @@
+import PropTypes from "prop-types";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
 
-import blogData from "../data/blog";
-import Header from "./Header.jsx";
-import About from "./About.jsx";
-import ArticleList from "./ArticleList.jsx";
-
-
-console.log(blogData);
-
-function App() {
+function App({ name, image, about, posts }) {
   return (
     <div className="App">
-    <Header name={blogData.name} />
-    <About image={blogData.image} about={blogData.about} />
-    <ArticleList posts={blogData.posts} />  
+      <Header name={name} />
+      <About image={image} about={about} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
+
+App.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.string,
+  about: PropTypes.string,
+  posts: PropTypes.array,
+};
 
 export default App;
